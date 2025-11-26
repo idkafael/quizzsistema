@@ -7,6 +7,7 @@ import feedbackImage from '../../assets/images/feedback.png'
 import bannerFinalImage from '../../assets/images/Captura de tela 2025-11-25 164350.png'
 import calendarioSemanalImage from '../../assets/images/Calendario semanal.png'
 import estatisticasCrescimentoImage from '../../assets/images/Estatísticas de Crescimento.png'
+import aulaImage from '../../assets/images/Aula.png'
 import { trackConversion } from '../utils/tracking'
 
 interface ResultPageProps {
@@ -189,12 +190,6 @@ const ResultPage = ({ onContinue, onBack }: ResultPageProps) => {
               Quero ter constância nos meus hábitos
             </button>
 
-            {/* Espaço para VSL */}
-            <div className="mt-6 w-full bg-gray-200 rounded-lg border-2 border-gray-300 flex items-center justify-center" style={{ minHeight: '400px' }}>
-              <p className="text-gray-500 text-lg md:text-xl font-medium">
-                [insira vsl]
-              </p>
-            </div>
           </div>
         </div>
 
@@ -278,11 +273,13 @@ const ResultPage = ({ onContinue, onBack }: ResultPageProps) => {
                 <li>Primeiros 7 dias: o que fazer exatamente</li>
               </ul>
 
-              {/* Espaço para imagem */}
-              <div className="mt-6 w-full bg-gray-200 rounded-lg border-2 border-gray-300 flex items-center justify-center" style={{ minHeight: '300px' }}>
-                <p className="text-gray-500 text-lg md:text-xl font-medium">
-                  [insira imagem]
-                </p>
+              {/* Imagem da Aula */}
+              <div className="mt-6 w-full">
+                <img
+                  src={aulaImage}
+                  alt="Aula Completa de Implementação"
+                  className="w-full h-auto rounded-lg"
+                />
               </div>
 
               {/* Botão CTA */}
